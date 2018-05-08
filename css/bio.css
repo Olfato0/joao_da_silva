@@ -1,0 +1,97 @@
+.citacao-bio {
+    background-color: #D9E5E3;
+    border: 0.5em solid #C2CCCA;
+    padding: 1em;
+    margin: 1em 2em;
+    width: 30ch;
+    box-sizing: border-box;
+    transition: box-shadow 1s, transform 1s;
+    transition-delay: 1s, 0s;
+}
+
+.citacao-bio:nth-of-type(even) {
+    float: left;
+    margin-left: 0;
+}
+.citacao-bio:nth-of-type(even):hover, .citacao-bio:nth-of-type(even):focus {
+    transform: scale(1.2);
+    transform: rotate(-5deg);
+}
+
+.citacao-bio:nth-of-type(odd) {
+    float: right;
+    margin-right: 0;
+}
+.citacao-bio:nth-of-type(odd):hover, .citacao-bio:nth-of-type(odd):focus {
+    transform: scale(1.2);
+    transform: rotate(5deg);
+}
+
+.citacao-bio:hover, .citacao-bio:focus{
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.8);
+    transition-delay: 0s, 1s;
+}
+
+main a:hover, main a:focus, footer a:hover, footer a:focus {
+    color: red;
+}
+
+.container > p::first-letter {
+    font-size: 2em;
+    color: #3C1D3D;
+    font-weight: blond;
+    text-shadow: 1px 1px #000;
+    margin-right: .2ch;
+    line-height: 1;
+}
+
+.citacao-bio::before {
+    content: '"';
+    font-size: 10em;
+    color: #bbb;
+    position: absolute;
+    line-height: 0.8
+}
+
+.citacao-bio > p {
+    position: relative;
+}
+
+.habilidades {
+    border-collapse: separate;
+    border-spacing: 0.25em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.habilidades thead {
+    background-color: #3C1D3D;
+    color: white;
+    font-weight: bold;
+}
+
+.habilidades tbody th {
+    background-color: #851944;
+    color: white;
+    font-weight: bold;
+}
+
+.habilidades td {
+    background-color: #EEE;
+    color: inherit;
+    padding: 1em;
+}
+
+.habilidades th {
+    padding: 1em;
+}
+
+.habilidades [colspan] {
+    text-align: center;
+    font-style: italic;
+}
+
+.habilidades [rowspan] {
+    vertical-align: middle;
+}

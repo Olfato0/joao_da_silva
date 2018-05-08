@@ -1,0 +1,22 @@
+.leia-mais {
+    padding: 0.5rem;
+    margin: 1em;
+    display: block;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #E6E7E8;
+}
+
+.post-blog + .post-blog {
+    padding-top: 1.5em;
+    margin-top: 1em;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    background-position: top center;
+    background-image: linear-gradient(to right, transparent, #ccc, transparent);
+}
+
+main a:hover, main a:focus, footer a:hover, footer a:focus {
+    color: red;
+}
+

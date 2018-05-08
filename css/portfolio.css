@@ -1,0 +1,27 @@
+.portfolio li {
+    flex: 1 1 45%;
+    border: 0.4em solid black;
+    background-color: #FAFFFC;
+    box-sizing: border-box;
+    padding: 0.8em;
+    margin-right: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+.portfolio img {
+    box-shadow: 0 0 4px #000;
+    width: 100%;
+}
+
+main a:hover, main a:focus, footer a:hover, footer a:focus {
+    color: red;
+}
+
+.portfolio li:first-child {
+    flex-basis: 100%;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
